@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>SkyPark - Мои билеты</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/tcal.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#caced7">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#caced7">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#caced7">
+</head>
+
+<body>
+    <!--<div class="loader">
+        <div class="loader_inner"></div>
+    </div>-->
+    <div class="header-wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="clearfix">
+                    <div class="animatedParent animateOnce" data-sequence="100">
+                        <h1 class="logo animated fadeIn" data-id="1"><a href="http://tochchh8.bget.ru/dist">SkyPark - парк приключений на высоте</a></h1>
+                        <ul class="login-menu">
+                            <li class="profile animated fadeIn" data-id="2"><a href="profile.html">Ярослав Котов</a></li>
+                            <li class="login animated fadeIn" data-id="3"><a href="reg-status.html">Выйти</a></li>
+                        </ul>
+                        <div class="jump-qty animated fadeInDownShort" data-id="4">Более 3.5 млн. прыжков с 1986 года</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav animatedParent animateOnce">
+        <div class="container animated fadeIn delay-250">
+            <ul>
+                <li><a href="#">Покупка</a></li>
+                <li class="active"><a href="#">Мои билеты</a></li>
+                <li><a href="#">Личный кабинет</a></li>
+                <li><a href="#">Депозит</a></li>
+                <li><a href="#">Договора и соглашения</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content-base animatedParent animateOnce">
+        <div class="container animated fadeIn delay-500">
+            <div class="content content-924">
+                <div class="main-title">
+                    <h2 class="my-ticket-title">Мои билеты</h2>
+                    <form action="#">
+                        <div class="inp-search">
+                            <input type="text" value="">
+                        </div>
+                        <div class="selection date-selection"><span>Дата</span></div>
+                        <div class="selection">
+                        	<select>
+                        		<option selected disabled>Статус</option>
+                        		<option>Активен</option>
+                        		<option>Использован</option>
+                        	</select>
+                        </div>
+                        <div class="selection">
+                        	<select>
+                        		<option selected disabled>Бронирование</option>
+                        		<option>Бронирование 1</option>
+                        		<option>Бронирование 2</option>
+                        		<option>Бронирование 3</option>
+                        	</select>
+                        </div>
+                    </form>
+                </div>
+                <div class="tickets-megatable">
+                    <div class="mt-header">
+                        <div class="col-1">&nbsp;</div>
+                        <div class="col-2">ID</div>
+                        <div class="col-3">Дата покупки</div>
+                        <div class="col-4">Цена</div>
+                        <div class="col-5">Цена со скидкой</div>
+                        <div class="col-6">Статус</div>
+                        <div class="col-7">Билетов доступно</div>
+                        <div class="col-8">Билетов всего</div>
+                        <div class="col-9">Счет</div>
+                    </div>
+                    <div class="part-wrap slide-block1">
+                        <div class="part-header">
+                            <div class="col-1"><b class="open-close1">&nbsp;</b></div>
+                            <div class="col-2">Партия 00010</div>
+                            <div class="col-3">10.04.2017</div>
+                            <div class="col-4">250 000 Р</div>
+                            <div class="col-5">200 000 Р</div>
+                            <div class="col-6"><span>Оплачена</span></div>
+                            <div class="col-7"><i>10</i></div>
+                            <div class="col-8">10</div>
+                            <div class="col-9"><img class="rub" src="img/rub.svg" alt=""></div>
+                        </div>
+                        <div class="part-items block1">
+                            <div class="part-item slide-block">
+                                <div class="pi-header">
+                                    <div class="col-1"><b class="open-close">&nbsp;</b></div>
+                                    <div class="col-other">Bungy 69</div>
+                                </div>
+                                <div class="pi-content block">
+                                    <div class="pi-content-header">
+                                        <div class="subcol-0">&nbsp;</div>
+                                        <div class="subcol-1">Номер</div>
+                                        <div class="subcol-2">ID</div>
+                                        <div class="subcol-3">Активность</div>
+                                        <div class="subcol-4">Дата покупки</div>
+                                        <div class="subcol-5">Цена</div>
+                                        <div class="subcol-6">Цена со скидкой</div>
+                                        <div class="subcol-7">Продан</div>
+                                    </div>
+                                    <div class="pi-content-rows">
+                                        <div class="pi-content-row">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-1">
+												<label for="hz-1"></label>
+											</div>
+                                            <div class="subcol-1">1</div>
+                                            <div class="subcol-2">00011</div>
+                                            <div class="subcol-3">Bungy 69</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7">&nbsp;</div>
+                                        </div>
+                                        <div class="pi-content-row selling">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-2">
+												<label for="hz-2"></label>
+											</div>
+                                            <div class="subcol-1">2</div>
+                                            <div class="subcol-2">00012</div>
+                                            <div class="subcol-3">Bungy 69</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7"><span><img src="img/radio-on.svg" alt=""></span></div>
+                                        </div>
+                                        <div class="pi-content-row selling">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-3">
+												<label for="hz-3"></label>
+											</div>
+                                            <div class="subcol-1">3</div>
+                                            <div class="subcol-2">00013</div>
+                                            <div class="subcol-3">Bungy 69</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7"><span><img src="img/radio-on.svg" alt=""></span></div>
+                                        </div>
+                                        <div class="pi-content-row selling">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-4">
+												<label for="hz-4"></label>
+											</div>
+                                            <div class="subcol-1">4</div>
+                                            <div class="subcol-2">00014</div>
+                                            <div class="subcol-3">Bungy 69</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7"><span><img src="img/radio-on.svg" alt=""></span></div>
+                                        </div>
+                                        <div class="pi-content-row">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-5">
+												<label for="hz-5"></label>
+											</div>
+                                            <div class="subcol-1">5</div>
+                                            <div class="subcol-2">00015</div>
+                                            <div class="subcol-3">Bungy 69</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7">&nbsp;</div>
+                                        </div>
+                                        <div class="pi-content-row">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-6">
+												<label for="hz-6"></label>
+											</div>
+                                            <div class="subcol-1">6</div>
+                                            <div class="subcol-2">00016</div>
+                                            <div class="subcol-3">Bungy 69</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7">&nbsp;</div>
+                                        </div>
+                                        <div class="pi-content-row">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-7">
+												<label for="hz-7"></label>
+											</div>
+                                            <div class="subcol-1">7</div>
+                                            <div class="subcol-2">00017</div>
+                                            <div class="subcol-3">Bungy 69</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="part-item slide-block">
+                                <div class="pi-header">
+                                    <div class="col-1"><b class="open-close">&nbsp;</b></div>
+                                    <div class="col-other">Bungy 207</div>
+                                </div>
+                                <div class="pi-content block">
+                                    <div class="pi-content-header">
+											<div class="subcol-0">
+												&nbsp;
+											</div>
+                                        <div class="subcol-1">Номер</div>
+                                        <div class="subcol-2">ID</div>
+                                        <div class="subcol-3">Активность</div>
+                                        <div class="subcol-4">Дата покупки</div>
+                                        <div class="subcol-5">Цена</div>
+                                        <div class="subcol-6">Цена со скидкой</div>
+                                        <div class="subcol-7">Продан</div>
+                                    </div>
+                                    <div class="pi-content-rows">
+                                        <div class="pi-content-row">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-8">
+												<label for="hz-8"></label>
+											</div>
+                                            <div class="subcol-1">1</div>
+                                            <div class="subcol-2">00011</div>
+                                            <div class="subcol-3">Bungy 207</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7">&nbsp;</div>
+                                        </div>
+                                        <div class="pi-content-row selling">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-9">
+												<label for="hz-9"></label>
+											</div>
+                                            <div class="subcol-1">2</div>
+                                            <div class="subcol-2">00012</div>
+                                            <div class="subcol-3">Bungy 207</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7"><span><img src="img/radio-on.svg" alt=""></span></div>
+                                        </div>
+                                        <div class="pi-content-row selling">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-10">
+												<label for="hz-10"></label>
+											</div>
+                                            <div class="subcol-1">3</div>
+                                            <div class="subcol-2">00013</div>
+                                            <div class="subcol-3">Bungy 207</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7"><span><img src="img/radio-on.svg" alt=""></span></div>
+                                        </div>
+                                        <div class="pi-content-row selling">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-11">
+												<label for="hz-11"></label>
+											</div>
+                                            <div class="subcol-1">4</div>
+                                            <div class="subcol-2">00014</div>
+                                            <div class="subcol-3">Bungy 207</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7"><span><img src="img/radio-on.svg" alt=""></span></div>
+                                        </div>
+                                        <div class="pi-content-row">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-12">
+												<label for="hz-12"></label>
+											</div>
+                                            <div class="subcol-1">5</div>
+                                            <div class="subcol-2">00015</div>
+                                            <div class="subcol-3">Bungy 207</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7">&nbsp;</div>
+                                        </div>
+                                        <div class="pi-content-row">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-13">
+												<label for="hz-13"></label>
+											</div>
+                                            <div class="subcol-1">6</div>
+                                            <div class="subcol-2">00016</div>
+                                            <div class="subcol-3">Bungy 207</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7">&nbsp;</div>
+                                        </div>
+                                        <div class="pi-content-row">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-14">
+												<label for="hz-14"></label>
+											</div>
+                                            <div class="subcol-1">7</div>
+                                            <div class="subcol-2">00017</div>
+                                            <div class="subcol-3">Bungy 207</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part-wrap slide-block1">
+                        <div class="part-header">
+                            <div class="col-1"><b class="open-close1">&nbsp;</b></div>
+                            <div class="col-2">Партия 00009</div>
+                            <div class="col-3">09.04.2017</div>
+                            <div class="col-4">150 000 Р</div>
+                            <div class="col-5">120 000 Р</div>
+                            <div class="col-6">Исчерпана</div>
+                            <div class="col-7">0</div>
+                            <div class="col-8">10</div>
+                            <div class="col-9"><img class="dol" src="img/dol.svg" alt=""></div>
+                        </div>
+                        <div class="part-items block1">
+                            <div class="part-item slide-block">
+                                <div class="pi-header">
+                                    <div class="col-1"><b class="open-close">&nbsp;</b></div>
+                                    <div class="col-other">Bungy 69</div>
+                                </div>
+                                <div class="pi-content block">
+                                    <div class="pi-content-header">
+										<div class="subcol-0">&nbsp;</div>
+                                        <div class="subcol-1">Номер</div>
+                                        <div class="subcol-2">ID</div>
+                                        <div class="subcol-3">Активность</div>
+                                        <div class="subcol-4">Дата покупки</div>
+                                        <div class="subcol-5">Цена</div>
+                                        <div class="subcol-6">Цена со скидкой</div>
+                                        <div class="subcol-7">Продан</div>
+                                    </div>
+                                    <div class="pi-content-rows">
+                                        <div class="pi-content-row">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-15">
+												<label for="hz-15"></label>
+											</div>
+                                            <div class="subcol-1">1</div>
+                                            <div class="subcol-2">00011</div>
+                                            <div class="subcol-3">Bungy 69</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7">&nbsp;</div>
+                                        </div>
+                                        <div class="pi-content-row selling">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-16">
+												<label for="hz-16"></label>
+											</div>
+                                            <div class="subcol-1">2</div>
+                                            <div class="subcol-2">00012</div>
+                                            <div class="subcol-3">Bungy 69</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7"><span><img src="img/radio-on.svg" alt=""></span></div>
+                                        </div>
+                                        <div class="pi-content-row selling">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-17">
+												<label for="hz-17"></label>
+											</div>
+                                            <div class="subcol-1">3</div>
+                                            <div class="subcol-2">00013</div>
+                                            <div class="subcol-3">Bungy 69</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7"><span><img src="img/radio-on.svg" alt=""></span></div>
+                                        </div>
+                                        <div class="pi-content-row selling">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-18">
+												<label for="hz-18"></label>
+											</div>
+                                            <div class="subcol-1">4</div>
+                                            <div class="subcol-2">00014</div>
+                                            <div class="subcol-3">Bungy 69</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7"><span><img src="img/radio-on.svg" alt=""></span></div>
+                                        </div>
+                                        <div class="pi-content-row">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-19">
+												<label for="hz-19"></label>
+											</div>
+                                            <div class="subcol-1">5</div>
+                                            <div class="subcol-2">00015</div>
+                                            <div class="subcol-3">Bungy 69</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7">&nbsp;</div>
+                                        </div>
+                                        <div class="pi-content-row">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-20">
+												<label for="hz-20"></label>
+											</div>
+                                            <div class="subcol-1">6</div>
+                                            <div class="subcol-2">00016</div>
+                                            <div class="subcol-3">Bungy 69</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7">&nbsp;</div>
+                                        </div>
+                                        <div class="pi-content-row">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-21">
+												<label for="hz-21"></label>
+											</div>
+                                            <div class="subcol-1">7</div>
+                                            <div class="subcol-2">00017</div>
+                                            <div class="subcol-3">Bungy 69</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="part-item slide-block">
+                                <div class="pi-header">
+                                    <div class="col-1"><b class="open-close">&nbsp;</b></div>
+                                    <div class="col-other">Bungy 207</div>
+                                </div>
+                                <div class="pi-content block">
+                                    <div class="pi-content-header">
+										<div class="subcol-0">&nbsp;</div>
+                                        <div class="subcol-1">Номер</div>
+                                        <div class="subcol-2">ID</div>
+                                        <div class="subcol-3">Активность</div>
+                                        <div class="subcol-4">Дата покупки</div>
+                                        <div class="subcol-5">Цена</div>
+                                        <div class="subcol-6">Цена со скидкой</div>
+                                        <div class="subcol-7">Продан</div>
+                                    </div>
+                                    <div class="pi-content-rows">
+                                        <div class="pi-content-row">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-22">
+												<label for="hz-22"></label>
+											</div>
+                                            <div class="subcol-1">1</div>
+                                            <div class="subcol-2">00011</div>
+                                            <div class="subcol-3">Bungy 207</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7">&nbsp;</div>
+                                        </div>
+                                        <div class="pi-content-row selling">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-23">
+												<label for="hz-23"></label>
+											</div>
+                                            <div class="subcol-1">2</div>
+                                            <div class="subcol-2">00012</div>
+                                            <div class="subcol-3">Bungy 207</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7"><span><img src="img/radio-on.svg" alt=""></span></div>
+                                        </div>
+                                        <div class="pi-content-row selling">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-24">
+												<label for="hz-24"></label>
+											</div>
+                                            <div class="subcol-1">3</div>
+                                            <div class="subcol-2">00013</div>
+                                            <div class="subcol-3">Bungy 207</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7"><span><img src="img/radio-on.svg" alt=""></span></div>
+                                        </div>
+                                        <div class="pi-content-row selling">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-25">
+												<label for="hz-25"></label>
+											</div>
+                                            <div class="subcol-1">4</div>
+                                            <div class="subcol-2">00014</div>
+                                            <div class="subcol-3">Bungy 207</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7"><span><img src="img/radio-on.svg" alt=""></span></div>
+                                        </div>
+                                        <div class="pi-content-row">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-26">
+												<label for="hz-26"></label>
+											</div>
+                                            <div class="subcol-1">5</div>
+                                            <div class="subcol-2">00015</div>
+                                            <div class="subcol-3">Bungy 207</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7">&nbsp;</div>
+                                        </div>
+                                        <div class="pi-content-row">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-27">
+												<label for="hz-27"></label>
+											</div>
+                                            <div class="subcol-1">6</div>
+                                            <div class="subcol-2">00016</div>
+                                            <div class="subcol-3">Bungy 207</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7">&nbsp;</div>
+                                        </div>
+                                        <div class="pi-content-row">
+											<div class="subcol-0">
+												<input type="checkbox" name="hz" id="hz-28">
+												<label for="hz-28"></label>
+											</div>
+                                            <div class="subcol-1">7</div>
+                                            <div class="subcol-2">00017</div>
+                                            <div class="subcol-3">Bungy 207</div>
+                                            <div class="subcol-4">10.04.2017</div>
+                                            <div class="subcol-5">1000 Р</div>
+                                            <div class="subcol-6">900 Р</div>
+                                            <div class="subcol-7">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="circle-buttons">
+                    <div class="send">
+                        <div id="forpopup-emailbox" class="a">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 27 26" enable-background="new 0 0 27 26" xml:space="preserve">
+                                <path fill="#FFC50F" d="M19.9,12.8L3.5,10.7C2.3,8.3,1.3,5.6,0.4,3c-0.5-1.3,0.8-2.6,2.2-2.1c7.6,3.1,15.8,6.6,23,10.4
+	c1.2,0.6,1.2,2.3,0,2.9c-7.3,3.8-15.4,7.3-23.1,10.4c-1.3,0.5-2.6-0.7-2.2-2.1c0.9-2.6,1.9-5.1,3.2-7.5L19.9,12.8z" />
+                            </svg>
+                        </div>
+						<div id="popup-emailbox" class="emailbox">
+							<form action="#">
+								<input type="email" placeholder="E-mail">
+								<input type="submit" value="Отправить">
+							</form>
+						</div>
+                    </div>
+                    <div class="print">
+                        <a href="javascript:window.print(); void 0;">
+                            <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 27 25" enable-background="new 0 0 27 25" xml:space="preserve">
+                                <g>
+                                    <path fill="#FFC50F" d="M20.7,2.7c0-1-0.8-1.8-1.8-1.8L8.1,0.8c-1,0-1.8,0.8-1.8,1.8l0,3c0,0.7,0.5,1.2,1.2,1.2l12,0.1
+		c0.7,0,1.2-0.5,1.2-1.2L20.7,2.7z" />
+                                    <path fill="#FFC50F" d="M21.2,19.8c-0.1-0.6-0.6-1-1.2-1L6.8,18.8c-0.6,0-1.1,0.4-1.2,1L5,22.6c-0.2,1.1,0.6,2.2,1.8,2.2L20,24.8
+		c1.1,0,2-1,1.8-2.1L21.2,19.8z" />
+                                    <path fill="#FFC50F" d="M24.2,8.1L2.7,8c-1.3,0-2.4,1-2.4,2.4c0,2.8-0.1,7.7,0,10.2c0.1,0.9,0.8,1.7,1.7,1.7c0.5,0,0.7,0,1.2,0.1
+		l1.3-4.7c0.2-0.8,0.9-1.3,1.7-1.3l14.1,0.1c0.8,0,1.5,0.5,1.7,1.3l1.3,4.7c0.5,0,0.7,0,1.2,0c0.9,0,1.7-0.8,1.7-1.7
+		c0.2-2.5,0.2-7.4,0.1-10.2C26.6,9.1,25.5,8.1,24.2,8.1z M3.8,12.8c-0.7,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2
+		c0.7,0,1.2,0.5,1.2,1.2C5,12.2,4.5,12.8,3.8,12.8z" />
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <aside class="aside-277">
+                <div class="cart">
+                    <div class="cart-title">
+                        <div class="top-info">Итого: 2500 Р</div>
+                        <div class="cart-ico">&nbsp;</div>
+                    </div>
+                    <div class="aside-cart-item">
+                        <div class="name-price">
+                            <div class="name" title="Входной билет">Входной билет</div>
+                            <div class="price">Льготный</div>
+                            <div class="price">1 000 Р</div>
+                        </div>
+                        <div class="num-input-wrapper">
+                            <div class="num-input clearfix">
+                                <div class="plus"></div>
+                                <input type="text" value="1" />
+                                <div class="minus"></div>
+                            </div>
+                        </div>
+                        <div class="scavenger">
+                            <div class="ico"></div>
+                        </div>
+                    </div>
+                    <div class="aside-cart-item">
+                        <div class="name-price">
+                            <div class="name" title="Входной билет">Веревочный парк</div>
+                            <div class="price">1 000 Р</div>
+                        </div>
+                        <div class="num-input-wrapper">
+                            <div class="num-input clearfix">
+                                <div class="plus"></div>
+                                <input type="text" value="1" />
+                                <div class="minus"></div>
+                            </div>
+                        </div>
+                        <div class="scavenger">
+                            <div class="ico"></div>
+                        </div>
+                    </div>
+                    <div class="aside-cart-item">
+                        <div class="name-price">
+                            <div class="name" title="Входной билет">Очень длинное длинное название</div>
+                            <div class="price">1 000 Р</div>
+                        </div>
+                        <div class="num-input-wrapper">
+                            <div class="num-input clearfix">
+                                <div class="plus"></div>
+                                <input type="text" value="1" />
+                                <div class="minus"></div>
+                            </div>
+                        </div>
+                        <div class="scavenger">
+                            <div class="ico"></div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <script src="js/jquery-2.2.3.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.showPassword.js"></script>
+    <script src="js/tcal.js"></script>
+    <script src="js/slideBlock1.js"></script>
+    <script src="js/slideBlock2.js"></script>
+    <script src="js/easyTooltip.js"></script>
+    <script src="js/jquery-contained-sticky-scroll-min.js"></script>
+    <script src="js/css3-animate-it.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
