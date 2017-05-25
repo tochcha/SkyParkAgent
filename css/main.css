@@ -2957,6 +2957,57 @@ footer {
     .slide-blocks .block p {
       font-size: 16px; }
 
+.toast {
+  text-align: center;
+  position: fixed;
+  z-index: 15;
+  top: 22px;
+  left: 50%;
+  margin-left: -150px;
+  width: 300px;
+  font: 500 24px/44px SFUIDisplay;
+  -webkit-border-radius: 12px;
+          border-radius: 12px;
+  border: 3px solid #181B4E; }
+  .toast .inner {
+    background-color: #ffc50c;
+    position: relative;
+    z-index: 14;
+    -webkit-border-radius: 12px;
+            border-radius: 12px; }
+  .toast:after {
+    display: block;
+    content: '';
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: -10px;
+    left: 50%;
+    margin-left: -20px;
+    background-color: #181B4E;
+    z-index: 13;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
+
+.overlaytoast {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: none;
+  z-index: 12; }
+  .overlaytoast.go {
+    display: block; }
+
+.fast {
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
 /**/
 /**/
 /**/

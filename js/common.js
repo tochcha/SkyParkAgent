@@ -41,13 +41,11 @@ jQuery(document).ready(function() {
         $(this).addClass("checked");
     });
 
-    // попап 1
-    /*$("#forpopup-1").click(function() {
-        $("#popup-1").fadeToggle(300);
+	// toasts
+    $(".overlaytoast").click(function() {
+        $(".toast").toggleClass("go goAway");
+        $(this).toggleClass("go goAway");
     });
-    $("#popup-1 .close").click(function() {
-        $("#popup-1").fadeOut(300);
-    });*/
 
     // num input
     (function() {
