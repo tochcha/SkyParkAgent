@@ -50,7 +50,11 @@
         </div>
     </div>
     <div class="nav animatedParent animateOnce">
-		<div class="button animatedClick" data-target="clickExample">Кликни меня</div>
+		<div class="button animatedClick forlefttop" data-target="clickLeftTop">Class lefttop</div>
+		<div class="button animatedClick" data-target="clickCenterOverlay">Центр Топ с Оверлеем</div>
+		<div class="button animatedClick forrighttop" data-target="clickRightTop">Class righttop</div><br>
+		<div class="button animatedClick forleftbottom" data-target="clickLeftBottom">Class leftbottom</div>
+		<div class="button animatedClick forrightbottom" data-target="clickRightBottom">Class rightbottom</div>
     </div>
     <div class="content-base animatedParent animateOnce">
         <div class="container animated fadeIn delay-500">
@@ -129,8 +133,14 @@
             </aside>-->
         </div>
     </div>
-	<div class='animated toast fadeOutUp clickExample fadeInDown fast'><div class="inner">Это сообщение!</div></div>
-	<div class="animated overlaytoast fadeOut clickExample fadeIn fast"></div>
+	<div class='animated toast fadeOutUp clickRightTop fadeInDown fast'><div class="inner">Right Top</div></div>
+	<div class='animated toast fadeOutUp clickLeftTop fadeInDown fast'><div class="inner">Left Top</div></div>
+	
+	<div class='animated toast fadeOutDown clickLeftBottom fadeInUp fast'><div class="inner">Left Bottom</div></div>
+	<div class='animated toast fadeOutDown clickRightBottom fadeInUp fast'><div class="inner">Right Bottom</div></div>
+	
+	<div class='animated toast fadeOutUp clickCenterOverlay fadeInDown fast'><div class="inner">Это сообщение!</div></div>
+	<div class="animated overlaytoast fadeOut clickCenterOverlay fadeIn fast"></div>
     <script src="js/jquery-2.2.3.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/slick.min.js"></script>

@@ -246,7 +246,7 @@ a.button:hover,
 .button:hover,
 input[type=button]:hover,
 input[type=submit]:hover {
-    background-color: transparent;
+    background-color: #fff;
     /*color: #fff;*/
     color: #091835;
     -webkit-transform: scale(1.05);
@@ -1039,8 +1039,7 @@ footer {
 .white-content input.tcal {
     color: #999;
     background: #d3d3d3;
-`
-    box-shadow: inset 0 3px 6px 1px #aaa;
+    ` box-shadow: inset 0 3px 6px 1px #aaa;
     -webkit-border-radius: 20px;
     border-radius: 20px;
 }
@@ -2656,7 +2655,7 @@ footer {
 }
 
 .ticket-table .column.cart-col3 .num-input {
-	padding-top: 3px;
+    padding-top: 3px;
 }
 
 .ticket-table .column.cart-col3 .plus {
@@ -2676,8 +2675,8 @@ footer {
     text-align: center;
     border: none;
     font: 700 24px/28px 'Bebas Neue';
-	height: 28px;
-	vertical-align: middle;
+    height: 28px;
+    vertical-align: middle;
 }
 
 .ticket-table .column.cart-col4 {
@@ -2898,8 +2897,8 @@ footer {
     -webkit-box-shadow: inset 0 3px 6px -1px #9f9f9f;
     box-shadow: inset 0 3px 6px -1px #9f9f9f;
     -webkit-border-radius: 20px;
-	border-radius: 20px;
-	background-color: #c7c7c7;
+    border-radius: 20px;
+    background-color: #c7c7c7;
 }
 
 .emailbox input[type=email].placeholder {
@@ -4192,6 +4191,38 @@ footer {
     border: 3px solid #181B4E;
 }
 
+.toast.clickRightTop {
+    margin-left: 0;
+    left: auto;
+    right: 22px;
+}
+
+.toast.clickLeftTop {
+    margin-left: 0;
+    left: 22px;
+}
+
+.toast.clickLeftBottom {
+    margin-left: 0;
+    left: 22px;
+    top: auto;
+    bottom: 22px;
+}
+
+.toast.clickRightBottom {
+    margin-left: 0;
+    left: auto;
+    right: 22px;
+    top: auto;
+    bottom: 22px;
+}
+
+.toast.clickLeftBottom:after,
+.toast.clickRightBottom:after {
+    top: auto;
+    bottom: -10px;
+}
+
 .toast .inner {
     background-color: #ffc50c;
     position: relative;
@@ -4238,10 +4269,11 @@ footer {
     animation-fill-mode: both;
 }
 
-
 select::-ms-expand {
     display: none;
 }
+
+
 /**/
 
 

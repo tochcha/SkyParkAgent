@@ -17,7 +17,7 @@ jQuery(document).ready(function() {
         removalDelay: 300,
         mainClass: 'my-mfp-slide-bottom'
     }); //fade-slide
-	
+
     // слайдер (настройки тут http://kenwheeler.github.io/slick/)
     $('.share-slider').slick({
         infinite: true,
@@ -41,10 +41,29 @@ jQuery(document).ready(function() {
         $(this).addClass("checked");
     });
 
-	// toasts
+    // toasts
     $(".overlaytoast").click(function() {
-        $(".toast").toggleClass("go goAway");
-        $(this).toggleClass("go goAway");
+        $(".clickCenterOverlay").toggleClass("go goAway");
+    });
+    $(".forrighttop").click(function() {
+        setTimeout(function() {
+            $(".clickRightTop").removeClass("go goAway");
+        }, 2500);
+    });
+    $(".forlefttop").click(function() {
+        setTimeout(function() {
+            $(".clickLeftTop").removeClass("go goAway");
+        }, 2500);
+    });
+    $(".forleftbottom").click(function() {
+        setTimeout(function() {
+            $(".clickLeftBottom").removeClass("go goAway");
+        }, 2500);
+    });
+    $(".forrightbottom").click(function() {
+        setTimeout(function() {
+            $(".clickRightBottom").removeClass("go goAway");
+        }, 2500);
     });
 
     // num input
@@ -79,13 +98,13 @@ jQuery(document).ready(function() {
     $("#check-all2").click(function() {
         var checked_status = this.checked;
         $("input.ds").each(function() {
-            this.checked = 	!checked_status;
+            this.checked = !checked_status;
         });
     });
     $("input.ds").click(function() {
         var checked_status = this.checked;
         $("#check-all2").each(function() {
-            this.checked = 	!checked_status;
+            this.checked = !checked_status;
         });
     });
 
@@ -111,7 +130,7 @@ jQuery(document).ready(function() {
             }
         });
     });
-	
+
     // попап emailform
     $("#forpopup-emailbox").click(function() {
         $("#popup-emailbox").fadeToggle(200);
@@ -119,7 +138,7 @@ jQuery(document).ready(function() {
 
     // подсказка при наведении
     $(".withtitle").easyTooltip();
-	
+
     //подсветка активного инпут и текстареа
     $(window, document, undefined).ready(function() {
         $('input, select, textarea').blur(function() {
