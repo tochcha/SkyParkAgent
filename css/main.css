@@ -422,7 +422,7 @@ footer {
 
 .header .logo a {
     display: block;
-    background: url(../img/logo.png) no-repeat;
+    background: url(../img/logo.svg) no-repeat;
     width: 225px;
     height: 85px;
     text-indent: -9999px;
